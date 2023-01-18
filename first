@@ -1,0 +1,63 @@
+[22,27,16,2,18,6] -> Insertion Sort
+
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Big-O gösterimini yazınız.
+
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Average case: Aradığımız sayının ortada olması
+Worst case: Aradığımız sayının sonda olması
+Best case: Aradığımız sayının dizinin en başında olması.
+
+
+----------------------------------------------------------
+
+* [22,27,16,2,18,6]
+* 22<27? YES
+* [22,27,16,2,18,6]
+* 27<16? NO, then Swap [22,16,27,2,18,6]
+* 22<16? NO, then Swap [16,22,27,2,18,6]
+* 27<2? NO, then Swap [16,22,2,27,18,6]
+* 22<2?  NO, then Swap [16,2,22,27,18,6]
+* 16<2? NO, then Swap [2,16,22,27,18,6]
+* 27<18? NO, then Swap [2,16,22,18,27,6]
+* 22<18? NO, then swap [2,16,18,22,27,6]
+* 27<6? NO, then Swap [2,16,18,22,6,27]
+* 18<6? NO, then Swap [2,16,18,22,6,27]
+* 22<6? NO, then Swap [2,16,6,18,22,27]
+* 16<6? NO, then Swap [2,6,16,18,22,27]
+* 2<6 YES, then STOP.
+
+----------------------------------------------------------
+
+Big-O Notation :  O(n^2)
+
+----------------------------------------------------------
+
+Time Complexity: Average Case
+
+----------------------------------------------------------
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+Highest value : 15
+* [7,3,5,8,2,9,4,6,15]
+Highest value : 9
+* [7,3,5,8,2,4,6,9,15]
+Highest value : 8
+* [7,3,5,2,4,6,8,9,15]
+Highest value : 7
+* [3,5,2,4,6,7,8,9,15]
+Highest value : 6
+* [3,5,2,4,6,7,8,9,15]
+Highest value : 5
+* [3,2,4,5,6,7,8,9,15]
+Highest value: 4
+* [3,2,4,5,6,7,8,9,15]
+Highest value: 3
+* [2,3,4,5,6,7,8,9,15]
+
+
+
+
